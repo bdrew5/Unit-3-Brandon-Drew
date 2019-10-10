@@ -5,7 +5,7 @@ public class WinPercentage{
     Scanner scan = new Scanner(System.in);
     System.out.println("How many games have you played?");
     int games = scan.nextInt();
-    System.out.println("How many games have you played?");
+    System.out.println("How many games have you won?");
     int won = scan.nextInt();
 
     while ((games <= 0) && (won > games) && (won < 0)) {
@@ -30,7 +30,7 @@ public class WinPercentage{
   }
 
     double percent = (double) won / games;
-    double perc  = percent * 10;
+    double perc  = percent * 100;
     System.out.println("Your win percantage is " + perc + "%");
   }
 }
