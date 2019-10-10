@@ -8,7 +8,7 @@ public class WinPercentage{
     System.out.println("How many games have you won?");
     int won = scan.nextInt();
 
-    while ((games <= 0) && (won > games) && (won < 0)) {
+    while ((games <= 0) || (won > games) || (won < 0)) {
     while (games <= 0) {
       System.out.println("Total games played must be greater than 0");
       System.out.println("Enter new games played value");
