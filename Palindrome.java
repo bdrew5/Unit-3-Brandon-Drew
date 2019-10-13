@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+<<<<<<< HEAD
 public class Palindrome
 {
     public static void main(String args[])
@@ -32,4 +33,15 @@ public class Palindrome
         else
         System.out.println("The string is a palindrome");
     }
+=======
+public class Palindrome{
+  public static void main(String [] args) {
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Enter a word that is a palindrome");
+    String word1 = scan.next();
+
+
+  }
+>>>>>>> ad7d246a8a6b88d505d5bba2b8e7c1207d671020
 }
