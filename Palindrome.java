@@ -1,35 +1,39 @@
 import java.util.Scanner;
 
-<<<<<<< HEAD
-public class Palindrome
-{
-    public static void main(String args[])
-    {
+
+public class Palindrome {
+  public static void main(String [] args) {
+        String letter1 = "";
+        String letter2 = "";
 
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the string you want to check:");
-        String word1 = scan.nextLine();
+        System.out.println("Enter the string you want to check: ");
+        String word1 = scan.next();
         int length = word1.length();
+        int last = (length - 1);
+        int first = 0;
+        String word2 = word1.toLowerCase();
 
-        int l = length;
-        int a = 0;
-
-        while ((l - a) > 0)
+        while ((last - first) > 0)
         {
-            String letter1 = (letter1) + word1.charAt(a);
-            String letter2 = (letter2) + word1.charAt(l);
-            int result = letter1.compareTo(letter2);
+          letter1 = letter1 + word2.charAt(first);
+          letter2 = letter2 + word2.charAt(last);
+          int result = letter1.compareTo(letter2);
 
-            if (result != 0) {
+          if (result != 0) {
             break;
           }
-          l = l--;
-          a = a--;
-        }
 
-        if ((a - l) > 0 ){
-        System.out.println("The string is not palindrome.");
+          else {
+            last = last - 1;
+            first = first + 1;
+      }
+    }
+
+        if ((last - first) != 0) {
+        System.out.println("The string is not palindrome");
       }
         else
         System.out.println("The string is a palindrome");
     }
+  }
