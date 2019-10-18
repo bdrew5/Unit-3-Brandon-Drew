@@ -23,7 +23,7 @@ public class Multiples {
           }
         }
         int val = num;
-        for (num = num; num <= limit; val = num * mult) {
+        for (num = num; val <= limit; val = num * mult) {
         System.out.println(val);
         mult = mult + 1;
       }
