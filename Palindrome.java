@@ -14,7 +14,7 @@ public class Palindrome {
         int first = 0;
         String word2 = word1.toLowerCase();
 
-        while (last > first)
+        while ((last - first) > 0)
         {
           letter1 = letter1 + word2.charAt(first);
           letter2 = letter2 + word2.charAt(last);
